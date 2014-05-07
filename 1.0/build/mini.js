@@ -74,7 +74,6 @@ KISSY.add('gallery/taginput/1.0/index',function (S, Node, Base) {
 						+ ' autocomplete="off" type="text" value="" data-placeholder="' 
 						+ this.get('placeholder') + '"/>').appendTo(this.inputWrap);
 
-				console.log(this.get('placeholder'));
 				this.inputNode.val(this.inputNode.attr('data-placeholder'));
 			}
 
