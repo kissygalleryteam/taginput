@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Taginput的demo</title>
+    <script src="http://g.tbcdn.cn/kissy/k/1.4.2/seed-min.js" charset="utf-8"></script>
+</head>
+<body>
+<h2>Taginput的demo</h2>
+<div id="J_tagInput"></div>
+<div class="log"></div>
+<script>
+    var S = KISSY;
+    if (S.Config.debug) {
+        var srcPath = "../../";
+        S.config({
+            packages:[
+                {
+                    name:"gallery/taginput",
+                    path:srcPath,
+                    charset:"utf-8",
+                    ignorePackageNameInUri:true
+                }
+            ]
+        });
+    }
+
+    S.use('gallery/taginput/1.0/index,node', function (S, Taginput, Node) {
+		new Taginput({
+			container: '#J_tagInput',
+			defaultTags: ['javascript', 'css', 'html', '招聘'],
+			placeholder: '请输入标签',
+			maxChar: 20,
+			onTagAdd: function(tag) {
+				Node.one('.log').append('add tag: ' + tag + '<br/>');
+			},
+			onTagRemove: function(tag) {
+				Node.one('.log').append('remove tag: ' + tag + '<br/>');
+			}
+		});
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+    "name": "taginput",
+    "comName":"Taginput",
+    "version": "1.0",
+    "desc": "",
+    "tag":"标签,输入",
+    "githubName":"aloysious",
+    "author": {
+        "name": "首作",
+        "email": "aloysious.ld@taobao.com",
+        "page": ""
+    },
+	"flexComboPort":"80",
+	"reserveServerPort":"8080",
+    "type": "kissy-gallery",
+    "type-url": "http://gallery.kissyui.com/guide"
+}
