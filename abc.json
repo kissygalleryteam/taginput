@@ -2,7 +2,8 @@
     "name": "taginput",
     "comName":"Taginput",
     "version": "1.0",
-    "desc": "",
+    "desc": "标签输入组件",
+	"cover": "http://gtms02.alicdn.com/tps/i2/T1imbkFLxXXXbK9Akw-642-284.png_300x300.jpg",
     "tag":"标签,输入",
     "githubName":"aloysious",
     "author": {
